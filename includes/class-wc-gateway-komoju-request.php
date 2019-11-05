@@ -34,7 +34,7 @@ class WC_Gateway_Komoju_Request {
 		$this->gateway    = $gateway;
 		$this->notify_url = $this->gateway->notify_url;
  		$this->request_id = substr(str_shuffle("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 6);
-		$this->Komoju_endpoint = '/ja/api/'.$this->gateway->accountID. '/transactions/';
+		$this->Komoju_endpoint = '/en/api/'.$this->gateway->accountID. '/transactions/';
 	}
 
 	/**
